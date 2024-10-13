@@ -1,0 +1,133 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  background-color: #f3f3f3;
+}
+
+h1 {
+  font-size: 48px; /* Large font size for the heading */
+  font-weight: bold; /* Make the text bold */
+  color: #084fba; /* Match the color with your theme */
+  margin-top: 10px; /* Space below the heading */
+  text-align: center; /* Center the text */
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#img {
+  height: 50px;
+  width: 50px;
+}
+
+#time {
+  font-size: 120px; /* Doubled font size */
+  font-weight: bold; /* Bold font */
+  color: #084fba; /* Space mission inspired blue */
+  background-color: transparent;
+  border: 8px solid #007bff; /* Thick border with the same color */
+  padding: 20px;
+  border-radius: 50%; /* Circular shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 250px; /* Adjusted for larger font size */
+  height: 250px; /* Adjusted for larger font size */
+}
+
+button {
+  opacity: 100;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #084fba;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.left-text,
+.right-text {
+  font-size: 24px; /* Adjusts the size of the text */
+  color: #084fba; /* Text color */
+  margin: 0 40px; /* Adds more space between the text and the circle */
+}
+.timer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Ensures enough width to space out the text */
+}
+button:hover {
+  background-color: #007bff;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.9s 2.5s;
+  animation: fadein 0.5s, fadeout 0.9s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 26px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 26px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 26px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 26px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
